@@ -34,7 +34,7 @@ a {
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
-.lien1[data-active=logements] {
+.lien1[data-active=signé] {
   color: #0065FC;
 }
 .lien1:hover {
@@ -163,7 +163,7 @@ a {
   margin: 0;
 }
 .aside_Hébergements_populaires, .menuHébergement {
-  background-color: #799cd4;
+  background-color: #d9dbdb;
   border-radius: 1.5rem;
   padding: 2rem;
 }
@@ -300,9 +300,9 @@ a {
 }
 
 
-
+/* Section de pied de page*/
 .pied_page {
-  background-color: #F2F2F2;
+  background-color: #d9dbdb;
   width: 100%;
 }
 .ensemble_colonne {

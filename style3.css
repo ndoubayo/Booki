@@ -10,26 +10,27 @@ a {
 }
 
 .header {
-  display: grid;
-  align-items: center;
-  max-width: 1440px;
-  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  max-width: 1400px;
+  margin: auto;  
+  justify-content: space-between;
 }
 .Img_entete {
   grid-area: logo;
-  padding: 0 2rem;
-  height: 2.813rem;
+  padding: 1em;
+  height: 3em;
 }
 .navig1 {
   display: flex;
   align-items: center;
-  grid-area: navbar;
+  grid-area: navbar;/*??????*/
 }
 .lien1 {
-  padding: 2rem;
-  font-weight: 500;
+  padding: 2.5em;
+  font-weight: 550;
   text-align: center;
-  transition-duration: 0.1s;
+  transition-duration: 0.1s; /*??????*/
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
@@ -42,15 +43,15 @@ a {
 .bloc_page {
   max-width: 1500px;
   margin: auto;
-  box-sizing: border-box;
+  box-sizing: border-box;/*??????*/
   padding: 1em;
 }
 
 .indication {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 .lieu {
-  margin-top: 0;
+  margin-top: 1;
 }
 .formulaire {
   display: inline-flex;
@@ -59,24 +60,24 @@ a {
 }
 .insertion_icon {
   background-color: #F2F2F2;
-  padding: 1rem 1.25rem;
-  border-radius: 1rem 0 0 1rem;
+  padding: 1em 1.5em;
+  border-radius: 1em 0 0 1em;
   text-align: center;
 }
 .icone1{
-  margin-left: 0.1rem;
+  margin-left: 1em;
 }
 .espace_recherche {
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
-  width: 14rem;
-  font-size: 1rem;
+  padding: 1.5em;
+  box-sizing: border-box;/*??????*/
+  width: 14em;
+  font-size: 1em;
   font-weight: bold;
-  font-family: "Raleway", "Sans serif";
+  font-family: "Raleway", "Sans serif";/*modif de police*/
 }
 .espace_recherche:placeholder {
   font-family: "Raleway", "Sans serif";
@@ -88,37 +89,37 @@ a {
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 0 1rem 1rem 0;
-  padding: 0 1.5rem;
+  border-radius: 0 1em 1em 0;
+  padding: 1.3em;
   font-family: "Raleway", "Sans serif";
-  font-size: 1rem;
-  cursor: pointer;
+  font-size: 1em;
+  cursor: pointer;/*??????*/
 }
 .contenant1_filtres {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 2em;
   flex-wrap: wrap;
 }
 .titre_filtres {
-  margin: 0 2rem 1rem 0;
+  margin: 0 2em 1em 0;
   display: flex;
   align-items: center;
 }
 .contenant2_filtres{
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 2em;
   border: 2px solid #d9d9d9;
-  border-radius: 2rem;
-  margin-bottom: 1rem;
+  border-radius: 2em;
+  margin-bottom: 1em;
   cursor: pointer;
-  transition-duration: 0.1s;
+  transition-duration: 0.1s;/*??????*/
   font-weight: bold;
 }
 .contenant2_filtres:last-child {
   margin-right: 0;
 }
-.contenant2_filtres:hover {
+.contenant2_filtres:hover { /*??????*/
   background-color: #f3f8ff;
   transform: scale(1.015);
 }

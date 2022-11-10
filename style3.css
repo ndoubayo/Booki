@@ -4,6 +4,8 @@ body {
   margin: 0;
 }
 
+
+/* Mise en place d'entête et de zone de recherche*/
 a {
   color: inherit;
   text-decoration: none;
@@ -24,13 +26,12 @@ a {
 .navig1 {
   display: flex;
   align-items: center;
-  grid-area: navbar;/*??????*/
 }
 .lien1 {
   padding: 2.5em;
   font-weight: 500;
   text-align: center;
-  transition-duration: 0.4s; /*??????*/
+  transition-duration: 0.4s;
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
@@ -43,7 +44,7 @@ a {
 .bloc_page {
   max-width: 1450px;
   margin: auto;
-  box-sizing: border-box;/*??????*/
+  box-sizing: border-box;
   padding: 1em;
 }
 
@@ -73,7 +74,7 @@ a {
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
   padding: 0 1.5em;
-  box-sizing: border-box;/*??????*/
+  box-sizing: border-box;
   width: 14em;
   font-size: 1em;
   font-weight: bold;
@@ -113,7 +114,7 @@ a {
   border-radius: 2em;
   margin-bottom: 1em;
   cursor: pointer;
-  transition-duration: 0.1s;/*??????*/
+  transition-duration: 0.1s;
   font-weight: bold;
 }
 .contenant2_filtres:last-child {
@@ -163,21 +164,25 @@ a {
   margin: 0;
 }
 .aside_Hébergements_populaires, .menuHébergement {
-  background-color: #d9dbdb;
+  background-color: #edeef0;
   border-radius: 1.5em;
   padding: 2em;
 }
-/*manipulation hébergement*/
+
+                        /* Espace et zone de recherche terminé*/
+
+/*manipulation hébergements à Marseille*/
 .Hébergement {
   display: grid;
-  column-gap: 2em; /*????????*/
-  grid-template-columns: 6fr 3fr;/*????????*/
+  column-gap: 2em;
+  grid-template-columns: 6fr 3fr;
 }
 .menuHébergement {
   display: grid;
-  column-gap: 2em; /*????????*/
-  row-gap: 2em;/*????????*/
+  column-gap: 2em;
+  row-gap: 2em;
 }
+ 
 .entete_Hébergement{
   grid-column: 1/-1;
 }
@@ -208,23 +213,19 @@ a {
   max-height: 100%;
   border-radius: 1em 1em 0 0;
 }
-.Description_Hébergement  {
+.Description_Hébergement, .étoiles, .descriptin_nuits  {
   margin: 0.25em 0.75em 0 0.75em;
 }
-.descriptin_nuits{
-  margin: 0.25em 0.75em 0.25em 0.75em;
-}
-.les_prix {
+  
+.les_prix,.afficher_plus {
   font-weight: bold;
 }
+   /* Hébergements à Marseille terminé*/
 
-
-.afficher_plus {
-  font-weight: bold;
-}
+   /*manipulation hébergements populaires*/
 .aside_Hébergements_populaires {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 2em;
   align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
 }
@@ -259,9 +260,7 @@ a {
 }
 .Hébergements_populaires_contenu_espace {
   flex: 1;
-}
-.hostingPopularhostingMainCard {
-  height: 8.75rem;
+
 }
 
 
@@ -302,7 +301,7 @@ a {
 
 /* Section de pied de page*/
 .pied_page {
-  background-color: #d9dbdb;
+  background-color:  #edeef0;
   width: 100%;
 }
 .ensemble_colonne {
@@ -502,4 +501,4 @@ a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*Conception CSS terminé*/

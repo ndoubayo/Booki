@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 body {
-  font-family: "Raleway", "Sans serif";
+  font-family: "Raleway", Arial, "Sans serif";
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ a {
 .header {
   display: flex;
   align-items: flex-end;
-  max-width: 1400px;
+  max-width: 1450px;
   margin: auto;  
   justify-content: space-between;
 }
@@ -28,9 +28,9 @@ a {
 }
 .lien1 {
   padding: 2.5em;
-  font-weight: 550;
+  font-weight: 500;
   text-align: center;
-  transition-duration: 0.1s; /*??????*/
+  transition-duration: 0.4s; /*??????*/
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
@@ -41,7 +41,7 @@ a {
   color: #0065FC;
 }
 .bloc_page {
-  max-width: 1500px;
+  max-width: 1450px;
   margin: auto;
   box-sizing: border-box;/*??????*/
   padding: 1em;
@@ -60,28 +60,28 @@ a {
 }
 .insertion_icon {
   background-color: #F2F2F2;
-  padding: 1em 1.5em;
+  padding: 1em 1.3em;
   border-radius: 1em 0 0 1em;
   text-align: center;
 }
 .icone1{
-  margin-left: 1em;
+  margin-left: 0.2em;
 }
 .espace_recherche {
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
-  padding: 1.5em;
+  padding: 0 1.5em;
   box-sizing: border-box;/*??????*/
   width: 14em;
   font-size: 1em;
   font-weight: bold;
-  font-family: "Raleway", "Sans serif";/*modif de police*/
+  font-family: "Raleway", Arial, "Sans serif";
 }
 .espace_recherche:placeholder {
-  font-family: "Raleway", "Sans serif";
-  font-size: 2em;
+  font-family: "Raleway", Arial, "Sans serif";
+  font-size: 1rem;
   color: white;
 }
 .bouton {
@@ -89,11 +89,11 @@ a {
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 0 1em 1em 0;
-  padding: 1.3em;
-  font-family: "Raleway", "Sans serif";
-  font-size: 1em;
-  cursor: pointer;/*??????*/
+  border-radius: 0 1rem 1rem 0;
+  padding: 1.3rem;
+  font-family: "Raleway", Arial, "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
 }
 .contenant1_filtres {
   display: flex;
@@ -119,17 +119,17 @@ a {
 .contenant2_filtres:last-child {
   margin-right: 0;
 }
-.contenant2_filtres:hover { /*??????*/
+.contenant2_filtres:hover { 
   background-color: #f3f8ff;
   transform: scale(1.015);
 }
 .contenant3_filtres {
   background-color: #DEEBFF;
   border-radius: 100%;
-  height: 3rem;
-  width: 3rem;
-  min-height: 3.5rem;
-  min-width: 3.5rem;
+  height: 3em;
+  width: 3em;
+  min-height: 3.5em;
+  min-width: 3.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,19 +142,19 @@ a {
 .contenant1_icone {
   display: flex;
   align-items: center;
-  margin: 1rem 0 2rem 0;
+  margin: 1em 0 2em 0;
 }
 .contenant2_icone {
-  height: 2rem;
-  width: 2rem;
-  min-height: 2rem;
-  min-width: 2rem;
+  height: 2em;
+  width: 2em;
+  min-height: 2em;
+  min-width: 2em;
   border: solid 1px #d9d9d9;
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 1em;
 }
 .espace_iconea {
   color: #0065FC;
@@ -164,19 +164,19 @@ a {
 }
 .aside_Hébergements_populaires, .menuHébergement {
   background-color: #d9dbdb;
-  border-radius: 1.5rem;
-  padding: 2rem;
+  border-radius: 1.5em;
+  padding: 2em;
 }
 /*manipulation hébergement*/
 .Hébergement {
   display: grid;
-  column-gap: 2rem;
-  grid-template-columns: 6fr 3fr;
+  column-gap: 2em; /*????????*/
+  grid-template-columns: 6fr 3fr;/*????????*/
 }
 .menuHébergement {
   display: grid;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 2em; /*????????*/
+  row-gap: 2em;/*????????*/
 }
 .entete_Hébergement{
   grid-column: 1/-1;
@@ -186,8 +186,8 @@ a {
 }
 .article_Hébergement {
   background-color: white;
-  padding: 0.375rem;
-  border-radius: 1.25rem;
+  padding: 0.375em;
+  border-radius: 1.25em;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
   cursor: pointer;
@@ -201,18 +201,18 @@ a {
   margin: 0;
 }
 .Images_Hébergement1 {
-  height: 7rem;
+  height: 7em;
   object-fit: cover;
   max-width: 100%;
   width: 100%;
   max-height: 100%;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1em 1em 0 0;
 }
 .Description_Hébergement  {
-  margin: 0.25rem 0.75rem 0 0.75rem;
+  margin: 0.25em 0.75em 0 0.75em;
 }
 .descriptin_nuits{
-  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+  margin: 0.25em 0.75em 0.25em 0.75em;
 }
 .les_prix {
   font-weight: bold;
@@ -247,7 +247,7 @@ a {
   max-width: 33%;
 }
 .Images_Hébergement2 {
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1em 0 0 1em;
   position: absolute;
   width: 100%;
   height: 100%;

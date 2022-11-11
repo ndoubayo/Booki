@@ -37,6 +37,7 @@ a {
 }
 .lien1[data-active=signé] {
   color: #0065FC;
+  border-top: 3px #0065FC solid;
 }
 .lien1:hover {
   color: #0065FC;
@@ -61,11 +62,11 @@ a {
 }
 .insertion_icon {
   background-color: #F2F2F2;
-  padding: 1em 1.3em;
+  padding: 1em 1em;
   border-radius: 1em 0 0 1em;
   text-align: center;
 }
-.icone1{
+.fa-location-dot{
   margin-left: 0.2em;
 }
 .espace_recherche {
@@ -87,11 +88,11 @@ a {
 }
 .bouton {
   background-color: #0065FC;
-  color: white;
+  color: aliceblue;
   font-weight: bold;
   border: none;
-  border-radius: 0 1rem 1rem 0;
-  padding: 1.3rem;
+  border-radius: 0 1em 1em 0;
+  padding: 1em;
   font-family: "Raleway", Arial, "Sans serif";
   font-size: 1rem;
   cursor: pointer;
@@ -263,12 +264,10 @@ a {
 
 }
 
-
-
 .section_activité {
   display: grid;
   column-gap: 2rem;
-  margin: 4rem 0;
+  margin: 4em 0;
 }
 .titre_section_activité {
   grid-column: 1/-1;
@@ -295,9 +294,8 @@ a {
   object-fit: cover;
 }
 .titre_activité {
-  margin: 1.2rem 1.5rem;
+  margin: 1.2em 1.5em;
 }
-
 
 /* Section de pied de page*/
 .pied_page {
@@ -309,22 +307,22 @@ a {
   max-width: 100%;
   width: 1440px;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 2em;
   box-sizing: border-box;
 }
 .colonne_individuelle{
   width: 30%;
-  padding: 2rem 2rem;
+  padding: 2em 2em;
 }
 .liens_pied_page {
   display: block;
-  margin: 1rem 0;
+  margin: 1em 0;
 }
 .liens_pied_page:hover {
   text-decoration: underline;
 }
 /* section de responsivité*/
-
+    /*ENTETE*/
 @media screen and (min-width: 550px) {
   .header {
     grid-template-columns: auto 1fr auto auto;
@@ -358,47 +356,36 @@ a {
     border-bottom-color: #0065FC;
   }
 }
+  /*ENTETE FIN*/
+  /*Formulaire et filtres*/
 @media screen and (max-width: 550px) {
-  .searchForm {
+  .formulaire {
     display: flex;
     width: 100%;
   }
-  .searchFormSearchinput {
+  .insertion_icon {
     flex: 1;
-  }
-  .searchFormSubmitinputText {
-    display: none;
-  }
-  .searchFormSubmitinputIcon {
-    display: block;
   }
 }
 @media screen and (max-width: 700px) {
-  .searchFiltersTitle {
+  .titre_filtres{
     width: 100%;
   }
-  .searchFiltersFilter {
-    margin-right: 1rem;
+  .contenant2_filtres {
+    margin-right: 1em;
   }
 }
-@media screen and (min-width: 550px) {
-  .searchFormSubmitinputText {
-    display: block;
-  }
-  .searchFormSubmitinputIcon {
-    display: none !important;
-  }
-}
-@media (max-width: 1500px) {
+/*Formulaire et filtres FIN*/
+@media (max-width: 1450px){
   .Hébergements{
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    row-gap: 2em;
   }
   .aside_Hébergements_populaires  {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 10rem;
-    column-gap: 2rem;
-    grid-row-start: 1;
+    grid-template-rows: auto 10em;
+    column-gap: 2em;
+    grid-column-start: 1;
   }
   .titres_Hébergements_populaires {
     grid-column: 1/-1;
@@ -409,22 +396,25 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 1000px) and (min-width: 600px) {
+@media (max-width: 925px) and (min-width: 650px) {
   .menuHébergement  {
     grid-template-columns: 1fr 1fr;
   }
-  .aside_Hébergements_populaires  {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(3, 9rem);
-  }
+ }
+@media (max-width: 1000px){
+
 }
 @media (max-width: 650px) {
-  .menuHébergement {
-    grid-template-columns: 1fr;
+  .Hébergements{
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (max-width: 1000px) {
-  
+   .aside_Hébergements_populaires {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
+   }
 }
 @media (min-width: 1100px) {
   .section_activité {

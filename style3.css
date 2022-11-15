@@ -97,7 +97,7 @@ a {
   font-size: 1rem;
   cursor: pointer;
 }
-.contenant1_filtres {
+.conteneur1_filtres{
   display: flex;
   margin-top: 2em;
   flex-wrap: wrap;
@@ -107,7 +107,7 @@ a {
   display: flex;
   align-items: center;
 }
-.contenant2_filtres{
+.conteneur2_filtres{
   display: flex;
   align-items: center;
   margin-right: 2em;
@@ -125,7 +125,7 @@ a {
   background-color: #f3f8ff;
   transform: scale(1.015);
 }
-.contenant3_filtres {
+.conteneur_icone {
   background-color: #DEEBFF;
   border-radius: 100%;
   height: 3em;
@@ -303,14 +303,16 @@ a {
 /* Section de pied de page*/
 .pied_page {
   background-color:  #edeef0;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  height: auto;
 }
 .ensemble_colonne {
   display: flex;
   max-width: 100%;
   width: 1440px;
   margin: auto;
-  padding: 0 2em;
+  padding: 0 0.2em;
   box-sizing: border-box;
 }
 .colonne_individuelle{

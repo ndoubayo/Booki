@@ -182,6 +182,7 @@ a {
   display: grid;
   column-gap: 2em;
   row-gap: 2em;
+  margin-bottom: 1rem;
 }
  
 .entete_Hébergement{
@@ -195,7 +196,7 @@ a {
   padding: 0.375em;
   border-radius: 1.25em;
   box-shadow: 0 0 16px #0000002e;
-  transition-duration: 0.1s;
+  transition: transform 100ms;
   cursor: pointer;
   box-sizing: border-box;
   height: 100%;
@@ -376,7 +377,7 @@ a {
   }
 }
 /*Formulaire et filtres FIN*/
-@media (max-width: 1450px){
+@media (max-width: 1440px){
   .Hébergements{
     grid-template-columns: 1fr;
     row-gap: 2em;
@@ -402,14 +403,14 @@ a {
   }
  }
 @media (max-width: 1000px){
-
-}
-@media (max-width: 650px) {
   .Hébergements{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+}
+@media (max-width: 650px) {
+  
 }
 @media (max-width: 1000px) {
    .aside_Hébergements_populaires {

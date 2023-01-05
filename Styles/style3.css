@@ -169,7 +169,6 @@ a {
   border-radius: 1.5em;
   padding: 2em;
 }
-
                         /* Espace et zone de recherche terminé*/
 
 /*manipulation hébergements à Marseille*/
@@ -182,14 +181,13 @@ a {
   display: grid;
   column-gap: 2em;
   row-gap: 2em;
-  margin-bottom: 1rem;
 }
  
 .entete_Hebergement{
   grid-column: 1/-1;
 }
 .menu_titre_Hebergement {
-  margin: 0;
+  margin: 1;
 }
 .article_Hebergement {
   background-color: white;
@@ -367,15 +365,15 @@ a {
 }
 /*Formulaire et filtres FIN*/
 @media (max-width: 1440px){
-  .Hebergements{
+  .Hebergement{
     grid-template-columns: 1fr;
-    row-gap: 2em;
+    row-gap: 2rem;
   }
   .aside_Hebergements_populaires  {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 10em;
-    column-gap: 2em;
-    grid-column-start: 1;
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
   }
   .titres_Hebergements_populaires {
     grid-column: 1/-1;
@@ -390,16 +388,12 @@ a {
   .menuHebergement  {
     grid-template-columns: 1fr 1fr;
   }
- }
-@media (max-width: 1000px){
-  .Hebergements{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
+
 @media (max-width: 650px) {
-  
+  .menuHebergement {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 1000px) {
    .aside_Hebergements_populaires {

@@ -19,7 +19,6 @@ a {
   justify-content: space-between;
 }
 .Img_entete {
-
   padding: 1em;
   height: 3em;
 }
@@ -169,7 +168,7 @@ a {
   border-radius: 1.5em;
   padding: 2em;
 }
-                        /* Espace et zone de recherche terminé*/
+            /* Espace et zone de recherche terminé*/
 
 /*manipulation hébergements à Marseille*/
 .Hebergement {
@@ -325,10 +324,15 @@ a {
 
 @media screen and (max-width: 550px) {
   .header {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo . button" "navbar navbar navbar";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #4d5158;
+    top: 0;
+    position: sticky;
+    background-color: white;
   }
-  
   .navig1 {
     order: 2;
   }
@@ -337,13 +341,15 @@ a {
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
   }
-  .lien1[data-active=logements] {
+  .lien1[data-active=signe] {
+    border-top: none;
     border-bottom-color: #0065FC;
   }
   .lien1:hover {
     border-bottom-color: #0065FC;
   }
 }
+
   /*ENTETE FIN*/
   /*Formulaire et filtres*/
 @media screen and (max-width: 550px) {

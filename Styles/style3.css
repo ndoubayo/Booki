@@ -17,6 +17,7 @@ a {
   max-width: 1440px;
   margin: auto;  
   justify-content: space-between;
+
 }
 .Img_entete {
   padding: 1em;
@@ -52,7 +53,7 @@ a {
   margin-bottom: 0.5em;
 }
 .lieu {
-  margin-top: 1;
+  margin: 1.5rem;
 }
 .formulaire {
   display: inline-flex;
@@ -157,9 +158,28 @@ a {
   justify-content: center;
   margin-right: 1em;
 }
-.espace_iconea {
-  color: #0065FC;
+.etoiles_coches {
+  font-size: 1.2em;
+  color: #0955e3;
 }
+
+.etoiles_pas_coches {
+  font-size: 1.2em;
+  color: #e4e8eb;
+}
+
+.fa-money-bill-wave,
+.fa-child-reaching,
+.fa-heart,
+.fa-dog,
+.fa-info {
+  color: blue;
+}
+
+.fa-location-dot {
+  font-size: 1em;
+}
+
 .text_contenant1_icone {
   margin: 0;
 }
@@ -168,7 +188,7 @@ a {
   border-radius: 1.5em;
   padding: 2em;
 }
-            /* Espace et zone de recherche terminé*/
+ /* Espace et zone de recherche terminé*/
 
 /*manipulation hébergements à Marseille*/
 .Hebergement {
@@ -178,15 +198,14 @@ a {
 }
 .menuHebergement {
   display: grid;
-  column-gap: 2em;
-  row-gap: 2em;
+  gap: 2rem;
 }
  
 .entete_Hebergement{
   grid-column: 1/-1;
 }
 .menu_titre_Hebergement {
-  margin: 1;
+  margin: 0;
 }
 .article_Hebergement {
   background-color: white;
@@ -261,7 +280,7 @@ a {
   flex: 1;
 
 }
-
+/*Section Activité à Marseille*/ 
 .section_activite {
   display: grid;
   column-gap: 2rem;
@@ -321,17 +340,23 @@ a {
 }
 /* section de responsivité*/
     /*ENTETE*/
-
+    @media (max-width: 1440px){
+      html{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+      }}
 @media screen and (max-width: 550px) {
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 10px #4d5158;
+    box-shadow: 1px 1px 20px #98999b;
     top: 0;
     position: sticky;
     background-color: white;
+    padding-bottom: 1rem;
+      z-index: 2;
   }
   .navig1 {
     order: 2;
@@ -352,7 +377,7 @@ a {
 
   /*ENTETE FIN*/
   /*Formulaire et filtres*/
-@media screen and (max-width: 550px) {
+/*@media screen and (max-width: 550px) {
   .formulaire {
     display: flex;
     width: 100%;
@@ -360,7 +385,7 @@ a {
   .insertion_icon {
     flex: 1;
   }
-}
+}*/
 @media screen and (max-width: 700px) {
   .titre_filtres{
     width: 100%;
@@ -407,6 +432,7 @@ a {
     grid-template-rows: auto repeat(3, 9rem);
    }
 }
+/*Activité a marseille*/
 @media (min-width: 1100px) {
   .section_activite {
     grid-template-columns: repeat(4, 1fr);
